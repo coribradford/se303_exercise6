@@ -9,7 +9,7 @@ class Label
 	end
 end
 
-def Button
+class Button
 
 	def color_offset
 		10
@@ -17,6 +17,18 @@ def Button
 
 	def color_hex
 		'#E0E0E0'
+	end
+
+end
+
+class DarkButton < Button
+
+	def color_offset
+		-10
+	end
+
+	def color_hex
+		'#111111'
 	end
 
 end
