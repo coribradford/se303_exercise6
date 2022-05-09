@@ -5,6 +5,7 @@ class Label
 		@x = x
 		@y = y
 		@foreground_color = foreground_color
+	end
 end
 
 def draw_button(label, is_dark_mode)
