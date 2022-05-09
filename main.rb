@@ -9,6 +9,18 @@ class Label
 	end
 end
 
+def Button
+
+	def color_offset
+		10
+	end
+
+	def color_hex
+		'#E0E0E0'
+	end
+
+end
+
 def draw_button(label, is_dark_mode)
 	if is_dark_mode
 		# darken foreground color for dark mode
