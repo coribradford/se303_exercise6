@@ -33,12 +33,7 @@ class DarkButton < Button
 
 end
 
-def draw_button(label, is_dark_mode)
-	if is_dark_mode
-		# darken foreground color for dark mode
-		paint(label.text, label.x, label.y, label.foreground_color - 10, '#111111')
-	else
-		# lighten foreground color for non-dark mode
-		paint(label.text, label.x, label.y, label.foreground_color + 10, '#E0E0E0')
-	end
+
+def draw_button(label, button)
+	paint(label.text, label.x, label.y, label.foreground_color + button.color_offset, button.color_hex)
 end
